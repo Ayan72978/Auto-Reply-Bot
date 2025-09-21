@@ -3,7 +3,7 @@ from openai import OpenAI
 # pip install openai 
 # if you saved the key under a different environment variable name, you can do something like:
 client = OpenAI(
-  api_key="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",
+  api_key="YOUR API KEY",
 )
 
 command = '''
@@ -32,5 +32,6 @@ completion = client.chat.completions.create(
     {"role": "user", "content": command}
   ]
 )
+
 
 print(completion.choices[0].message.content)
