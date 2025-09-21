@@ -7,7 +7,7 @@ from openai import OpenAI
 
 
 client = OpenAI(
-  api_key="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",
+  api_key="YOUR API KEY",
 )
 
 def is_last_message_from_sender(chat_log, sender_name="Ahmed Sayyed"):
@@ -62,4 +62,5 @@ while True:
         time.sleep(1)  # Wait for 1 second to ensure the paste command is completed
 
         # Step 7: Press Enter
+
         pyautogui.press('enter')
